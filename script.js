@@ -22,8 +22,6 @@ function router(value){
 	
 //};
 
-element.addEventListener('touchend', (event) => {popup()})
-
 function popup(){
 	pujs.popup(title = 'Введите место назначения', 
 		message = '', 
@@ -31,6 +29,9 @@ function popup(){
 		{ 'text': 'Отмена', callback: () => { }, color: 'var(--pu-red)' }], 
 		'vert', [{placeholder: ''}])
 }
+
+element = document.getElementById("scene");
+element.addEventListener('touchend', (event) => {popup()});
 
 	//const marker1 = document.getElementById('animated-marker1');
 	
