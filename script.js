@@ -4,12 +4,23 @@ function router(value){
 	const arrow3 = document.getElementById("arr3");
 	const arrow4 = document.getElementById("arr4");
 	
-	if (value == '1'){
-		alert('Rotated');
+	if (value == 'Маршрут1'){
 		arrow1.object3D.rotation.set(Math.PI / 2, 0, - 3*(Math.PI / 4));
 		arrow2.object3D.rotation.set(Math.PI / 2, 0, 3*(Math.PI / 4));
-		arrow3.object3D.rotation.set(Math.PI / 2, 0, -(Math.PI / 4));
-		arrow4.object3D.rotation.set(Math.PI / 2, 0, (Math.PI / 4));
+		arrow3.object3D.rotation.set(Math.PI / 2, 0, (Math.PI / 4));
+		arrow4.object3D.rotation.set(Math.PI / 2, 0, -(Math.PI / 4));
+	}
+	if (value == 'Маршрут2'){
+		arrow1.object3D.rotation.set(Math.PI / 2, 0, - 3*(Math.PI / 4) + Math.PI);
+		arrow2.object3D.rotation.set(Math.PI / 2, 0, 3*(Math.PI / 4) + Math.PI);
+		arrow3.object3D.rotation.set(Math.PI / 2, 0, (Math.PI / 4) + Math.PI);
+		arrow4.object3D.rotation.set(Math.PI / 2, 0, -(Math.PI / 4) + Math.PI);
+	}
+	if (value == 'Маршрут0'){
+		arrow1.object3D.rotation.set(0, 0 ,0);
+		arrow2.object3D.rotation.set(0, 0 ,0);
+		arrow3.object3D.rotation.set(0, 0 ,0);
+		arrow4.object3D.rotation.set(0, 0 ,0);
 	}
 	
 }
