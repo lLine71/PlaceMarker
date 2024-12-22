@@ -8,19 +8,22 @@ function router(value){
 	
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-	var element = document.createElement("button");
-	element.appendChild(document.createTextNode("Click Me!"));
-	element.addEventListener("click", popup, false);
+//document.addEventListener("DOMContentLoaded", function() {
+	//var element = document.createElement("button");
+	//element.appendChild(document.createTextNode("Click Me!"));
+	//element.addEventListener("click", popup, false);
 		 
-	var page = document.getElementById("btn");
-	let text = document.createTextNode("Button");
-	element.appendChild(text);
-	page.appendChild(element);
+	//var page = document.getElementById("btn");
+	//let text = document.createTextNode("Button");
+	//element.appendChild(text);
+	//page.appendChild(element);
 		 
-	console.log(element);
+	//console.log(element);
 	
-};
+//};
+
+element.addEventListener('touchend', (event) => {popup()})
+
 function popup(){
 	pujs.popup(title = 'Введите место назначения', 
 		message = '', 
