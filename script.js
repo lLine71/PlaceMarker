@@ -8,5 +8,9 @@ window.onload = () => {
 	const marker1 = document.getElementById('animated-marker1');
 	
 	
-	pujs.popup(title = 'Введите место назначения', message = '', buttons = [{ 'text': 'Ввод', callback: (value) => {alert(value)} },{ 'text': 'Cancel', callback: () => { }, color: 'var(--pu-red)' }], 'vert', [{placeholder: 'Try type something'}])
+	pujs.popup(title = 'Введите место назначения', 
+	message = '', 
+	buttons = [{ 'text': 'Ввод', callback: (value) => {alert(value)} },
+	{ 'text': 'Отмена', callback: () => { }, color: 'var(--pu-red)' }], 
+	'vert', [{placeholder: ''}])
 };
