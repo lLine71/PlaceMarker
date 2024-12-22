@@ -5,13 +5,9 @@ function route1(){
 }
 
 window.onload = () => {
-	//const marker1 = document.getElementById('animated-marker1');
+	const marker1 = document.getElementById('animated-marker1');
 	
 	
-	pujs.popup(title = 'Choose your destination', message = '', 
-	buttons = [{ 'text': 'Action', callback: (value) => { 
-	setTimeout(()=>{console.log(value); pujs.alert(JSON.stringify(value), 'success')},1) } },{ 'text': 'Cancel', 
-	callback: () => { }, color: 'var(--pu-red)' }], 'vert', [{placeholder: 'Try type something'}, {placeholder: 
-	'Hidden Text', type: 'password'}])
+	pujs.popup(title = 'Try Input Something', message = 'This is a sample alert box<br>with an input element.', buttons = [{ 'text': 'Action', callback: (value) => { setTimeout(()=>{console.log(value);pujs.alert(JSON.stringify(value), 'success')},1) } },{ 'text': 'Cancel', callback: () => { }, color: 'var(--pu-red)' }], 'vert',  [{placeholder: 'Try type something'}, {placeholder: 'Hidden Text', type: 'password'}])
 
 };
