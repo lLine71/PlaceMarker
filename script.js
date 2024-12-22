@@ -3,7 +3,7 @@ function router(value){
 	
 	if (value == '1'){
 		alert('Rotated');
-		arrow1.object3D.rotation.set(Math.PI / 2, 0, Math.PI / 4);
+		arrow1.object3D.rotation.set(Math.PI / 2, 0, - 3*(Math.PI / 4));
 	}
 	
 }
