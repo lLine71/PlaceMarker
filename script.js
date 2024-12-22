@@ -32,7 +32,7 @@ function popup(){
 
 element = document.getElementById("scene");
 element.addEventListener('touchend', (event) => {popup()});
-
+ 
 	//const marker1 = document.getElementById('animated-marker1');
 	
 	
