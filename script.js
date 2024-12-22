@@ -30,8 +30,10 @@ function popup(){
 		'vert', [{placeholder: ''}])
 }
 
-element = document.getElementById("scene");
-element.addEventListener('touchend', (event) => {popup()});
+document.addEventListener("DOMContentLoaded", function() {
+	element = document.getElementById("scene");
+	element.addEventListener('touchend', (event) => {popup()});
+};
  
 	//const marker1 = document.getElementById('animated-marker1');
 	
