@@ -1,8 +1,8 @@
 function router(value){
 	const arrow1 = document.getElementById("arr1");
-	const arrow1 = document.getElementById("arr2");
-	const arrow1 = document.getElementById("arr3");
-	const arrow1 = document.getElementById("arr4");
+	const arrow2 = document.getElementById("arr2");
+	const arrow3 = document.getElementById("arr3");
+	const arrow4 = document.getElementById("arr4");
 	
 	if (value == '1'){
 		alert('Rotated');
