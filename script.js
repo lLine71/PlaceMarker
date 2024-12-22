@@ -9,7 +9,8 @@ window.onload = () => {
 	
 	
 	pujs.popup(title = 'Choose your destination', message = '', 
-	'vert', [{placeholder: 'Try type something'}, {placeholder: 
-	'Hidden Text', type: 'password'}])
+	buttons = [{ 'text': 'Action', callback: (value) => { 
+	setTimeout(()=>{console.log(value); pujs.alert(JSON.stringify(value), 'success')},1) } },{ 'text': 'Cancel', 
+	callback: () => { }, color: 'var(--pu-red)' }], 'vert', [{placeholder: 'Try type something'}])
 
 };
