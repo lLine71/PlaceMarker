@@ -1,4 +1,4 @@
-import * as THREE from 'three'
+import * as THREE from 'three';
 
 window.onload = () => {
 	const marker1 = document.getElementById('animated-marker1');
