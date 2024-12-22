@@ -7,7 +7,7 @@ function router(value){
 	}
 	
 }
-
+    
 window.onload = () => {
 	//const marker1 = document.getElementById('animated-marker1');
 	
