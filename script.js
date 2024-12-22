@@ -7,14 +7,28 @@ function router(value){
 	}
 	
 }
-    
-window.onload = () => {
+
+document.addEventListener("DOMContentLoaded", function() {
+     var element = document.createElement("button");
+     element.appendChild(document.createTextNode("Click Me!"));
+     element.addEventListener("click", popup, false);
+	 
+	 var page = document.getElementById("btn");
+     page.appendChild(element);
+	 
+     console.log(element);
+ });
+ 
+function popup(){
+	pujs.popup(title = 'Введите место назначения', 
+		message = '', 
+		buttons = [{ 'text': 'Ввод', callback: (value) => {router(value)} },
+		{ 'text': 'Отмена', callback: () => { }, color: 'var(--pu-red)' }], 
+		'vert', [{placeholder: ''}])
+}
+//window.onload = () => {
 	//const marker1 = document.getElementById('animated-marker1');
 	
 	
-	pujs.popup(title = 'Введите место назначения', 
-	message = '', 
-	buttons = [{ 'text': 'Ввод', callback: (value) => {router(value)} },
-	{ 'text': 'Отмена', callback: () => { }, color: 'var(--pu-red)' }], 
-	'vert', [{placeholder: ''}])
-};
+	
+//};
