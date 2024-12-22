@@ -6,7 +6,11 @@
         <script src="https://raw.githack.com/donmccurdy/aframe-extras/master/dist/aframe-extras.loaders.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-detector.js"></script>
         <script src="https://raw.githack.com/AR-js-org/studio-backend/master/src/modules/marker/tools/gesture-handler.js"></script>
-    </head>
+		<link rel="stylesheet" href="./lib/pu.min.css" />
+		<script src="./lib/pu.min.js"></script>
+		<script src="./script.js"></script>
+	
+	</head>
 
     <body style="margin: 0; overflow: hidden;">
         <a-scene
@@ -26,7 +30,7 @@
             </a-assets>
 
             <a-marker
-                id="animated-marker"
+                id="animated-marker1"
                 type="pattern"
                 preset="custom"
                 url="assets/marker.patt"
@@ -36,7 +40,7 @@
                 id="markerA"
             >
                 <a-entity
-                    id="bowser-model"
+                    id="arr1"
                     scale="5.890910339799074 5.890910339799074 5.890910339799074"
                     animation-mixer="loop: repeat"
                     gltf-model="#animated-asset"
