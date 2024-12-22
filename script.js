@@ -4,7 +4,7 @@ window.onload = () => {
 	const marker1 = document.getElementById('animated-marker1');
 	const arrow1 = document.getElementById("arr1");
 	
-	arrow1.object3D.rotation.set(THREE.MathUtils.degToRad(15), THREE.MathUtils.degToRad(30), THREE.MathUtils.degToRad(90));
+	arrow1.object3D.rotation.set(Math.PI / 2, 0, Math.PI / 4);
 	
 	pujs.popup(title = 'Choose your destination', message = '', 
 	buttons = [{ 'text': 'Action', callback: (value) => { 
