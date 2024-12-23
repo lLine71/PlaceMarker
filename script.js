@@ -17,10 +17,10 @@ function router(value){
 		arrow4.object3D.rotation.set(Math.PI / 2, 0, -(Math.PI / 4) + Math.PI);
 	}
 	if (value == 'Маршрут0'){
-		arrow1.object3D.rotation.set(0, 0 ,0);
-		arrow2.object3D.rotation.set(0, 0 ,0);
-		arrow3.object3D.rotation.set(0, 0 ,0);
-		arrow4.object3D.rotation.set(0, 0 ,0);
+		arrow1.object3D.rotation.set(Math.PI / 2, 0 ,0);
+		arrow2.object3D.rotation.set(Math.PI / 2, 0 ,0);
+		arrow3.object3D.rotation.set(Math.PI / 2, 0 ,0);
+		arrow4.object3D.rotation.set(Math.PI / 2, 0 ,0);
 	}
 	
 }
